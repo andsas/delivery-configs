@@ -28,7 +28,7 @@ spring:
         data: classpath:/sql/data.sql
         driver-class-name: org.postgresql.Driver
         username: postgres
-        password: postgres
+        password: andsas
         platform: postgres
         schema: classpath:/sql/schema.sql
         url: jdbc:postgresql://localhost:5432/book_db?createDatabaseIfNotExist=true
