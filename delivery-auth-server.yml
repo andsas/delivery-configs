@@ -35,7 +35,7 @@ spring:
         
     jpa:
         database-platform: org.hibernate.dialect.MySQLDialect
-        generate-ddl: false
+        generate-ddl: true
         hibernate:
-            ddl-auto: none
+            ddl-auto: create
         show-sql: true
