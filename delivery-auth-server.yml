@@ -34,7 +34,7 @@ spring:
         schema: classpath:/sql/schema.sql
         
     jpa:
-        database-platform: org.hibernate.dialect.MySQL5Dialect
+        database-platform: org.hibernate.dialect.MariaDBDialect
         generate-ddl: true
         hibernate:
             ddl-auto: create
