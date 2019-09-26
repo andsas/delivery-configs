@@ -25,8 +25,8 @@ security:
 
 spring:
     datasource:
-        schema: classpath:/sql/schema.sql
-        data: classpath:/sql/data.sql
+        #schema: classpath:/sql/schema.sql
+        #data: classpath:/sql/data.sql
         driver-class-name: com.mysql.jdbc.Driver
         url: jdbc:mysql://192.168.1.209:3306/oauth?allowPublicKeyRetrieval=TRUE&useSSL=FALSE
         platform: mysql
