@@ -22,20 +22,22 @@ security:
             client-secret: $2a$10$pHrkc/kyN4xfkI4T5D/RZOTRIOHbHNqOhmPis7fIotaSyswQcMadi
             resource-ids: resources
             scope: read,write
-
+        
 spring:
     datasource:
-        #schema: classpath:/sql/schema.sql
-        #data: classpath:/sql/data.sql
         driver-class-name: com.mysql.cj.jdbc.Driver
-        url: jdbc:mysql://192.168.1.209:3306/oauth?allowPublicKeyRetrieval=TRUE&useSSL=FALSE
+        url: jdbc:postgresql://localhost:5432/postgres
         platform: mysql
-        username: root
-        password: root        
+        username: postgres
+        password: postgres        
         
     jpa:
-        database-platform: org.hibernate.dialect.MySQL8Dialect
+        database: POSTGRESQL
+        database-platform: org.hibernate.dialect.PostgreSQL95Dialect
         generate-ddl: true
+        show-sql: true
         hibernate:
             ddl-auto: none
-        show-sql: true
+            naming:
+                implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl
+                physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
