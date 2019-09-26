@@ -19,7 +19,7 @@ security:
             access-token-validity-seconds: 1800
             authorized-grant-types: password,refresh_token
             client-id: coderef
-            client-secret: $2a$10$cg4IWbT.0lkE2wMbYWROmu9oWCd1b2ALb3VH5XPJIPjQbAEmJemMK
+            client-secret: $2a$10$0egnjGHG/tioaFS2zUSKe.0lPs7hxgLxTFD5W7SF9tytqjodjgfZy
             resource-ids: resources
             scope: read,write
 
@@ -37,5 +37,5 @@ spring:
         database-platform: org.hibernate.dialect.MySQL8Dialect
         generate-ddl: true
         hibernate:
-            ddl-auto: create
+            ddl-auto: update
         show-sql: true
