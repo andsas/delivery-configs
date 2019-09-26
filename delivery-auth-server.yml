@@ -19,7 +19,7 @@ security:
             access-token-validity-seconds: 1800
             authorized-grant-types: password,refresh_token
             client-id: coderef
-            client-secret: 2a$10$0egnjGHG/tioaFS2zUSKe
+            client-secret: $2a$10$pHrkc/kyN4xfkI4T5D/RZOTRIOHbHNqOhmPis7fIotaSyswQcMadi
             resource-ids: resources
             scope: read,write
 
